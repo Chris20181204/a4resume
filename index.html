@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>履歷</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".content .tab-content").hide();
+        $(".content .tab-content:first-child").show();
+
+        $("ul li").click(function(){
+
+          $("ul li").removeClass("active");
+          $(this).addClass("active");
+
+          var tabvalue = $(this).attr("data-list") 
+          $(".content .tab-content").hide();
+          $("."+tabvalue).show();
+        
+        
+         });
+
+      });
+    </script>
+   
+</head>
+
+<body>
+
+<h1>RESUME</h1>
+<div class="wrapper">
+    
+
+    <!-- 大頭貼 -->
+    <div class="section">
+          <div class="section-pic">
+            <img src="images/bighead.jpg" class="bghead">
+          </div>
+          <div class="section-text">
+              <h2>王翊名</h2>
+              <p>年齡:24</p>
+              <p>居住城市: 高雄市</p>
+              <p>對事情充滿好奇</p>
+          </div>
+    </div>
+  
+  <hr>  
+    <!-- nav -->
+  <div class="contact">
+    <div class="tabs">
+      <ul>
+        <li class="active" data-list="tab-1">個人介紹</li>
+        <li data-list="tab-2">技能專長</li>
+        <li data-list="tab-3">學習經歷</li>
+        <li data-list="tab-4">階段目標</li>
+        <li data-list="tab-5">個人特質</li>
+        <li data-list="tab-6">作品呈現</li>
+      </ul>
+    </div>
+
+    <!-- 資料區 -->
+    <div class="content">
+      <div class="tab-content tab-1">
+          <!-- <h1>個人介紹</h1> -->
+          <!-- <hr> -->
+
+          <h2>聯絡方式</h2>
+          <p>手機 : 0920086173</p>
+          <p>E-mail：s2013623@gmail.com</p>
+
+          <h2>學業經歷</h2>
+          <p>學校 : 彰化師範大學</p>
+          <p>科系 : 工業教育與技術學系(電機電子工程相關)</p>
+          <p>畢業 : 2017 / 06</p>
+
+          <h2>學習動機</h2>
+          <p>在偶然的一次機緣下，看到線上某平台的CSS教學，利用語法或程式就能指定畫面改變樣式以及動畫效果，因此想更加深入了解網頁領域的相關等技能與職業，以及往後的發展方向。</p>
+      </div>
+      <div class="tab-content tab-2">
+          <!-- <h1>技能專長</h> -->
+          <!-- <hr> -->
+          <div class="circle">
+            <h2>較於熟悉技能</h2>
+            <p>HTML5  <small>( 建立主要內容架構 )</small></p>
+            <p>CSS3 <small> ( 增加內容相關樣式 )</small> </p>
+            <p>Bootstrap<small> ( 組件方式呈現畫面 )</small></p>
+            <p>jQuery<small> ( 一般基礎撰寫、第三方套件加入 )</small></p>
+          </div>
+          <div class="circle">
+            <h2>正接觸技能</h2>
+            <p>AJAX<small> ( 連接後端API，使用範例信註冊、登入等內容 )</small></p>
+            <p>JavaScript<small> ( 大約了解程式編碼內容，無法從無到有撰寫 )</small></p>
+            <p>Git、Github<small> ( 利用Github免費空間上傳作品、Git基礎過程與處理 )</small></p>
+            
+          </div>
+          <div class="circle">
+            <h2>略有接觸技能，但目前無法駕馭</h2>
+            <p>Vue.js<small> ( 基礎語法介紹、使用元件等 )</small></p>
+          </div>
+          
+      </div>
+      <div class="tab-content tab-3">
+          <!-- <h1>學習經歷</h1> -->
+          <!-- <hr> -->
+          <p class="p3"> 起初，我沒有任何關於軟體工程的經驗和背景，
+            學習的過程總會遇到的困難點，基本上都是從網
+            路搜尋獲得所有資訊，技術文件的種類有很多，
+            官方或資深前端人所分享出來的資料多道不盡可
+            數，就看自己如何去吸收；亦或者在社群網站上
+            私訊老師自己較不能理解的地方，也能得到解惑。
+            在學習上，雖然都是很片段的學習，自我的觀念或
+            許也沒那麼清楚，但透過一次次的將疑惑找出來，
+            並知道問題錯在哪裡，這是我覺得學習最可貴的地方
+            ，也特別喜歡這樣的成就。
+          </p>
+          <p class="p3-1">
+            學習種種的技術也算一段時間，雖然以練習的作品上
+            沒有到很成熟的地步，但為了讓自己所學的技術能更
+            加綻放，也不願浪費自己花費許多心思，因此決定自
+            己將己心思全力放於前端。
+              
+          </p>
+      </div>
+      <div class="tab-content tab-4">
+          <p class="p4">
+              目前以前端工程目標，學習技巧上幾乎是透過線上平台的教學課程
+              ，或觀看影音網站的網紅教學技術上的解說；從基礎的網頁切版HTML
+              、CSS進而延伸到可以符合不同頁面尺寸的RWD效果，加上點外掛
+              Jquery讓特效的更加簡單，有邏輯的javascript，
+              也有速成的框架Bootstrap4和vue.js，在使框架上較沒多次使用，
+              因此相較於陌生，相對也需要花更多精力學習。
+         </p>
+         <p class="p4-1">
+            前端領域有我值得投入的地方，發展性上也特多元，未來會接觸到更
+            多技術需要去學習，也可能會有後端的領域去作搭配，這每個階段都有
+            我可以值得去精進的部分，可以不斷的自我進修，不斷的看自己有所成長
+            ，也是自我對工作的一個指標性。
+         </p>
+        </div>
+      <div class="tab-content tab-5">
+          <p class="p5">
+              經以往的觀察下來，不論是還在就學時期的打工，還是真正出社會後選擇的工作而言，
+            我所嚮往的是將工作變換成一種的目標，這樣的目標會讓我願意自動自發地去學習一切對我來說是有幫助的；
+            跟在讀書的時候不一樣，在學校你可能某些科目不適合自己，但為了應付考試，還是要把基本的做好，這叫責任，
+            而當學習不在是一種責任的時候，那會讓我更加的專研在其中，也會在過程獲得成就感，我想這是大部分人所想要的。
+          </p>
+          <p class="p5-1">
+              也許在別人以眼裡，我看起來比較不容易親近，但其實也是好相處的，只是要熟悉身旁的人事環境。
+            負責、冷靜、學習是我對於事情的要求，負起責任，也許聽起來簡單，實際上卻還是有種種困難存在，較懦弱膽小的一面大家都有，
+            只不過跨過這一步就沒那麼難；冷靜處事，冷靜的處理事情是我覺得工作以來最需要的，遇到問題難免有緊張暴動情緒，
+            也只有安穩自己思緒才能讓一切處理更井然有序；學習目標是我追求的，有漸漸的成長才知道自己是有在學東西，
+            不論是工作技術還是人際關係，這學習其實都影響我心態的發展。
+          </p>
+          <p>
+            種種以上，雖然目前的我還不是最好的，但可以漸漸成為最好的我。
+          </p>
+      </div>
+      <div class="tab-content tab-6">
+        <div class="form">
+            <img src="images/project1.jpg" width="230" alt="">
+            <h2>Coffee Room</h2>
+            <p>以Bootstrap4的框架<br>建立快速的響應式網頁，以及搭配簡易Photoshop修改圖片，使其完成相關內容。</p>
+            <div class="link">
+              <a href="https://chris20181204.github.io/1204-1coffee/">點選連結</a>
+            </div>
+        </div>
+        <div class="form">
+            <img src="images/project2.jpg" width="230" alt="">
+            <h2>烘培森林</h2>
+            <p>以html與css為架構和豐富網頁的內容與呈現樣式，再加上第三方jquery Pling等效果，讓網頁整體更加生動</p>
+            <div class="link">
+              <a href="https://chris20181204.github.io/1204bread/">點選連結</a>
+            </div>
+        </div>
+        <div class="form">
+            <img src="images/a4.jpg" width="230" alt="">
+            <h2>個人簡易履歷</h2>
+            <p>將自我的學習過程、目標或是針對現階段所會的技能等等，讓人清楚明瞭，與正式履歷相較而言，較偏向個人發展。</p>
+            <div class="link">
+              <a href="">點選連結</a>
+            </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>
